@@ -79,6 +79,9 @@ on init
 #set GPS GPIO property, which is used in gps_select
     setprop ro.gps.gpio 61
 
+on property:sys.boot_completed=1
+    setprop sys.io.scheduler bfq
+
 # Thie yields each tegra wdt expiration to be at 30 secs and fourth expiration for reboot at 120 secs.
 service watchdogd /sbin/watchdogd 10 110
     class core
