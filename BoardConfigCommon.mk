@@ -34,6 +34,7 @@ TARGET_LD_SHIM_LIBS += /system/vendor/lib/hw/camera.tegra.so|/system/vendor/lib/
 endif
 
 # Graphics
+TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 ifeq ($(TARGET_TEGRA_GPU),drm)
 TARGET_USES_HWC2 := true
 BOARD_USES_DRM_HWCOMPOSER := true
