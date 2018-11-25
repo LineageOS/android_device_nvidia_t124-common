@@ -15,8 +15,16 @@
 #
 
 TARGET_TEGRA_VERSION := t124
+TARGET_TEGRA_PHS     ?= ussrd
 
 PRODUCT_PACKAGES += \
     init.t124.rc
+
+ifeq ($(TARGET_TEGRA_PHS),ussrd)
+PRODUCT_PACKAGES += \
+    init.ussrd.rc \
+    ussr_setup.sh \
+    ussrd.conf
+endif
 
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
