@@ -23,5 +23,6 @@ TARGET_CPU_VARIANT := cortex-a15
 
 # Board
 TARGET_BOARD_PLATFORM := tegra
+TARGET_NO_BOOTLOADER := true
 
 include device/nvidia/tegra-common/BoardConfigTegra.mk
