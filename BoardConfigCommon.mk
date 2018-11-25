@@ -28,4 +28,10 @@ TARGET_NO_BOOTLOADER := true
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# SELinux
+BOARD_SEPOLICY_DIRS += device/nvidia/t124-common/sepolicy
+
+# Zygote whitelist extra paths
+ZYGOTE_WHITELIST_PATH_EXTRA := \"/dev/nvhost-ctrl\",\"/dev/nvmap\",
+
 include device/nvidia/tegra-common/BoardConfigTegra.mk
