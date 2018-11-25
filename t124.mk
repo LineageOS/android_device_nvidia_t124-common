@@ -17,6 +17,9 @@
 TARGET_TEGRA_VERSION := t124
 TARGET_TEGRA_PHS     ?= ussrd
 
+# System properties
+include $(LOCAL_PATH)/system_prop.mk
+
 PRODUCT_PACKAGES += \
     init.t124.rc
 
