@@ -17,7 +17,8 @@
 TARGET_TEGRA_VERSION := t124
 
 PRODUCT_PACKAGES += \
-    init.t124.rc
+    init.t124.rc \
+    init.tlk.rc
 
 PRODUCT_PACKAGES += \
     init.ussrd.rc \
