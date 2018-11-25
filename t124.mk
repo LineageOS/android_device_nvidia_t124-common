@@ -19,4 +19,9 @@ TARGET_TEGRA_VERSION := t124
 PRODUCT_PACKAGES += \
     init.t124.rc
 
+PRODUCT_PACKAGES += \
+    init.ussrd.rc \
+    ussr_setup.sh \
+    ussrd.conf
+
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
