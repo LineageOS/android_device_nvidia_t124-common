@@ -33,4 +33,10 @@ ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
 DEVICE_MANIFEST_FILE += device/nvidia/t124-common/t124-nvgpu-manifest.xml
 endif
 
+# SELinux
+BOARD_SEPOLICY_DIRS += device/nvidia/t124-common/sepolicy
+
+# Zygote whitelist extra paths
+ZYGOTE_WHITELIST_PATH_EXTRA := \"/dev/nvhost-ctrl\",
+
 include device/nvidia/tegra-common/BoardConfigTegra.mk
