@@ -16,6 +16,9 @@
 
 TARGET_TEGRA_VERSION := t124
 
+# System properties
+include $(LOCAL_PATH)/system_prop.mk
+
 PRODUCT_PACKAGES += \
     init.t124.rc
 
