@@ -53,6 +53,9 @@ on boot
     chown system system /sys/kernel/tegra_cpu_emc/table_src
     write /sys/kernel/tegra_cpu_emc/table_src 1
 
+on property:ro.hardware.vulkan=nvgpu
+    export LD_PRELOAD "libshim_zw.so"
+
 on init
     # Mount a tmpfs into /mnt/tmp for hosting nvram, phs shared memory
     mkdir /mnt/tmp 0770 system system
