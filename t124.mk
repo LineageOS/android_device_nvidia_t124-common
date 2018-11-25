@@ -16,4 +16,7 @@
 
 TARGET_TEGRA_VERSION := t124
 
+PRODUCT_PACKAGES += \
+    init.t124.rc
+
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
