@@ -41,4 +41,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/com.nvidia.feature.opengl4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nvidia.feature.opengl4.xml \
     $(LOCAL_PATH)/permissions/com.nvidia.nvsi.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.nvidia.nvsi.xml
 
+# Graphics Shims
+PRODUCT_PACKAGES += \
+    libshim_zw
+
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
