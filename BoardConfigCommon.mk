@@ -25,4 +25,7 @@ TARGET_CPU_VARIANT := cortex-a15
 TARGET_BOARD_PLATFORM := tegra
 TARGET_NO_BOOTLOADER := true
 
+# Binder API version
+TARGET_USES_64_BIT_BINDER := true
+
 include device/nvidia/tegra-common/BoardConfigTegra.mk
