@@ -28,6 +28,9 @@ TARGET_NO_BOOTLOADER := true
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# HIDL
+DEVICE_MANIFEST_FILE += device/nvidia/t124-common/t124-nvgpu-manifest.xml
+
 # Zygote whitelist extra paths
 ZYGOTE_WHITELIST_PATH_EXTRA := \"/dev/nvhost-ctrl\",
 
