@@ -28,4 +28,9 @@ TARGET_NO_BOOTLOADER := true
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# HIDL
+ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
+DEVICE_MANIFEST_FILE += device/nvidia/t124-common/t124-nvgpu-manifest.xml
+endif
+
 include device/nvidia/tegra-common/BoardConfigTegra.mk
