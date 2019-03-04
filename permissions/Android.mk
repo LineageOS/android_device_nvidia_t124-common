@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,13 +14,11 @@
 # limitations under the License.
 #
 
-TARGET_TEGRA_VERSION := t124
-TARGET_TEGRA_GPU     ?= nvgpu-t124
+LOCAL_PATH := $(call my-dir)
 
-# System properties
-include $(LOCAL_PATH)/system_prop.mk
-
-PRODUCT_PACKAGES += \
-    init.t124.rc
-
-$(call inherit-product, device/nvidia/tegra-common/tegra.mk)
+include $(CLEAR_VARS)
+LOCAL_MODULE               := com.nvidia.nvsi.xml
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_SRC_FILES            := com.nvidia.nvsi.xml
+LOCAL_MODULE_RELATIVE_PATH := permissions
+include $(BUILD_PREBUILT)
