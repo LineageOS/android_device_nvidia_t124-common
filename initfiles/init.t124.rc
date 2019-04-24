@@ -58,6 +58,9 @@ on init
     mkdir /mnt/tmp 0770 system system
     mount tmpfs tmpfs /mnt/tmp mode=0775,gid=1003
 
+    # Use Keymaster 0 HAL
+    setprop ro.hardware.keystore v0.tegra
+
     start watchdogd
 
 #set GPS GPIO property, which is used in gps_select
