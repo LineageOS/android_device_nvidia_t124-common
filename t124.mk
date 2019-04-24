@@ -14,8 +14,9 @@
 # limitations under the License.
 #
 
-TARGET_TEGRA_VERSION := t124
-TARGET_TEGRA_GPU     ?= nvgpu-t124
+TARGET_TEGRA_VERSION  := t124
+TARGET_TEGRA_GPU      ?= nvgpu-t124
+TARGET_TEGRA_KEYSTORE ?= nvkeystore-t124
 
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
