@@ -61,6 +61,9 @@ on init
     # Use Keymaster 0 HAL
     setprop ro.hardware.keystore v0.tegra
 
+    # TLK SecureOS
+    setprop ro.boot.secureos tlk
+
     start watchdogd
 
 #set GPS GPIO property, which is used in gps_select
