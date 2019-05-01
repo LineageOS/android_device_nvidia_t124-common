@@ -23,7 +23,8 @@ TARGET_TEGRA_PHS      ?= ussrd
 include $(LOCAL_PATH)/system_prop.mk
 
 PRODUCT_PACKAGES += \
-    init.t124.rc
+    init.t124.rc \
+    init.tlk.rc
 
 ifeq ($(TARGET_TEGRA_PHS),ussrd)
 PRODUCT_PACKAGES += \
