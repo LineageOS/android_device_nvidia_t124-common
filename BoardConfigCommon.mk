@@ -28,6 +28,14 @@ TARGET_NO_BOOTLOADER := true
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# Graphics
+ifeq ($(TARGET_TEGRA_GPU),drm)
+TARGET_USES_HWC2 := true
+BOARD_USES_DRM_HWCOMPOSER := true
+BOARD_GPU_DRIVERS := nouveau
+DEVICE_MANIFEST_FILE += device/nvidia/t124-common/t124-drm-manifest.xml
+endif
+
 # SELinux
 BOARD_SEPOLICY_DIRS += device/nvidia/t124-common/sepolicy
 
