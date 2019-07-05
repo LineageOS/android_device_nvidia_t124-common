@@ -28,9 +28,18 @@ TARGET_NO_BOOTLOADER := true
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# Graphics
+ifeq ($(TARGET_TEGRA_GPU),drm)
+TARGET_USES_HWC2 := true
+BOARD_USES_DRM_HWCOMPOSER := true
+BOARD_GPU_DRIVERS := nouveau
+endif
+
 # HIDL
 ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
 DEVICE_MANIFEST_FILE += device/nvidia/t124-common/t124-nvgpu-manifest.xml
+else ifeq ($(TARGET_TEGRA_GPU),drm)
+DEVICE_MANIFEST_FILE += device/nvidia/t124-common/t124-drm-manifest.xml
 endif
 
 # SELinux
