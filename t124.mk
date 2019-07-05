@@ -29,6 +29,11 @@ ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
 # Graphics Shims
 PRODUCT_PACKAGES += \
     libshim_zw
+else ifeq ($(TARGET_TEGRA_GPU),drm)
+PRODUCT_PACKAGES += \
+    hwcomposer.drm \
+    gralloc.gbm \
+    libGLES_mesa
 endif
 
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
