@@ -23,7 +23,8 @@ include $(LOCAL_PATH)/system_prop.mk
 
 PRODUCT_PACKAGES += \
     init.t124.rc \
-    init.tlk.rc
+    init.tlk.rc \
+    ueventd.ardbeg.rc
 
 ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
 # Graphics Shims
