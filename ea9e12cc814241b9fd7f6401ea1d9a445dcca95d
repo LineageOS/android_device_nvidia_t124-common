@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "21d30543_3229150f",
+        "filename": "system_prop.mk",
+        "patchSetId": 6
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2019-12-10T19:46:04Z",
+      "side": 1,
+      "message": "no need for whitespace line",
+      "revId": "ea9e12cc814241b9fd7f6401ea1d9a445dcca95d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
