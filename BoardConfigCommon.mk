@@ -28,6 +28,11 @@ TARGET_NO_BOOTLOADER := true
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# Camera shims
+ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
+TARGET_LD_SHIM_LIBS += /system/vendor/lib/hw/camera.tegra.so|/system/vendor/lib/libcamera_shim.so
+endif
+
 # Graphics
 ifeq ($(TARGET_TEGRA_GPU),drm)
 TARGET_USES_HWC2 := true
