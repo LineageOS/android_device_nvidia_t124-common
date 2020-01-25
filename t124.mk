@@ -26,6 +26,13 @@ PRODUCT_PACKAGES += \
     init.tlk.rc \
     ueventd.ardbeg.rc
 
+# Camera Shims
+ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
+PRODUCT_PACKAGES += \
+    libcamera_shim \
+    libEGL_vndk
+endif
+
 ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
 # Graphics Shims
 PRODUCT_PACKAGES += \
