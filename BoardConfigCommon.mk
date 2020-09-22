@@ -61,6 +61,9 @@ BOARD_GPU_DRIVERS := nouveau
 DEVICE_MANIFEST_FILE += device/nvidia/t124-common/t124-drm-manifest.xml
 endif
 
+# HIDL
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
 # Nvmm shims
 TARGET_LD_SHIM_LIBS += \
   /system/vendor/lib/libnvomxadaptor.so|/system/lib/libmedia_omx.so \
