@@ -19,3 +19,7 @@ endif
 # Input
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.noresample=1
+
+# LMKd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.low_ram=true
