@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,37 +11,40 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-TARGET_TEGRA_VERSION  := t124
-TARGET_TEGRA_GPU      ?= nvgpu-t124
-TARGET_TEGRA_KEYSTORE ?= nvkeystore-t124
+LOCAL_PATH := device/nvidia/t124-common/vendor
 
-# System properties
-include $(LOCAL_PATH)/system_prop.mk
+$(call inherit-product, $(LOCAL_PATH)/t124-recovery.mk)
 
+# AVP firmware
 PRODUCT_PACKAGES += \
-    init.t124.rc \
-    init.tlk.rc \
-    ueventd.ardbeg.rc
+    nvavp_aacdec_ucode \
+    nvavp_aud_ucode \
+    nvavp_mp3dec_ucode \
+    nvavp_os_0ff00000 \
+    nvavp_os_8ff00000 \
+    nvavp_os_eff00000 \
+    nvavp_os_f7e00000 \
+    nvavp_vid_ucode_alt
 
-# Camera Shims
-ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
+# Xusb firmware
 PRODUCT_PACKAGES += \
-    libcamera_shim \
-    libEGL_vndk
+    tegra12x_xusb_firmware
+
+# GPU firmware
+PRODUCT_PACKAGES += \
+    fecs \
+    gpccs \
+    gpmu_ucode \
+    NETB_img
+
+# General firmware
+PRODUCT_PACKAGES += \
+    nvhost_msenc031 \
+    nvhost_tsec \
+    vic03_ucode
+
+# Oemcrypto
+ifeq ($(TARGET_TEGRA_WIDEVINE),true)
+PRODUCT_PACKAGES += liboemcrypto
 endif
-
-ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
-# Graphics Shims
-PRODUCT_PACKAGES += \
-    init.nvgpu_shims.rc \
-    libshim_zw
-else ifeq ($(TARGET_TEGRA_GPU),drm)
-PRODUCT_PACKAGES += \
-    hwcomposer.drm \
-    gralloc.gbm \
-    libGLES_mesa
-endif
-
-include device/nvidia/tegra-common/tegra.mk

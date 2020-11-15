@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,37 +11,25 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-TARGET_TEGRA_VERSION  := t124
-TARGET_TEGRA_GPU      ?= nvgpu-t124
-TARGET_TEGRA_KEYSTORE ?= nvkeystore-t124
+LOCAL_PATH := device/nvidia/t124-common/vendor
 
-# System properties
-include $(LOCAL_PATH)/system_prop.mk
-
-PRODUCT_PACKAGES += \
-    init.t124.rc \
-    init.tlk.rc \
-    ueventd.ardbeg.rc
-
-# Camera Shims
 ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
-PRODUCT_PACKAGES += \
-    libcamera_shim \
-    libEGL_vndk
+$(call inherit-product, $(LOCAL_PATH)/camera/nvcamera.mk)
 endif
 
 ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
-# Graphics Shims
-PRODUCT_PACKAGES += \
-    init.nvgpu_shims.rc \
-    libshim_zw
-else ifeq ($(TARGET_TEGRA_GPU),drm)
-PRODUCT_PACKAGES += \
-    hwcomposer.drm \
-    gralloc.gbm \
-    libGLES_mesa
+$(call inherit-product, $(LOCAL_PATH)/nvgpu/nvgpu.mk)
 endif
 
-include device/nvidia/tegra-common/tegra.mk
+ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore-t124)
+$(call inherit-product, $(LOCAL_PATH)/keystore/keystore.mk)
+endif
+
+ifeq ($(TARGET_TEGRA_OMX),nvmm-t124)
+$(call inherit-product, $(LOCAL_PATH)/nvmm/nvmm.mk)
+endif
+
+ifeq ($(TARGET_TEGRA_SENSORS),fusion520)
+$(call inherit-product, $(LOCAL_PATH)/sensors/fusion.mk)
+endif
