@@ -1,0 +1,146 @@
+# Camera
+nv-tegra-t124	vendor/lib/hw/camera.tegra.so			t124/camera/lib/hw/camera.tegra.so
+nv-tegra-t124	core/include/ft/model_frontalface.xml		t124/camera/etc/model_frontal.xml
+nv-tegra-t124	vendor/lib/libnvcamerahdr_v3.so			t124/camera/lib/libnvcamerahdr_v3.so
+nv-tegra-t124	vendor/lib/libnvcamerautils.so			t124/camera/lib/libnvcamerautils.so
+nv-tegra-t124	vendor/lib/libnvcam_imageencoder.so		t124/camera/lib/libnvcam_imageencoder.so
+nv-tegra-t124	vendor/lib/libnvcamlog.so			t124/camera/lib/libnvcamlog.so
+nv-tegra-t124	vendor/lib/libnvfnet.so				t124/camera/lib/libnvfnet.so
+nv-tegra-t124	vendor/lib/libnvfnetstorehdfx.so		t124/camera/lib/libnvfnetstorehdfx.so
+stock-t124	system/vendor/lib/libnvfnetstoredefog.so	t124/camera/lib/libnvfnetstoredefog.so
+nv-tegra-t124	vendor/lib/libnvisp_v3.so			t124/camera/lib/libnvisp_v3.so
+nv-tegra-t124	vendor/lib/libnvmm_camera_v3.so			t124/camera/lib/libnvmm_camera_v3.so
+nv-tegra-t124	vendor/lib/libnvstitching.so			t124/camera/lib/libnvstitching.so
+nv-tegra-t124	vendor/lib/libnvvicsi_v3.so			t124/camera/lib/libnvvicsi_v3.so
+nv-tegra-t124	lib/libopencv24_tegra.so			t124/camera/lib/libopencv24_tegra.so
+nv-tegra-t124	vendor/lib/libscf.so				t124/camera/lib/libscf.so
+nv-tegra-t124	lib/libtbb.so					t124/camera/lib/libtbb.so
+nv-tegra-t124	vendor/lib/libnvodm_imager.so			t124/camera/lib/libnvodm_imager.so
+stock-t124	system/vendor/lib/libnvcameranrr.so		t124/camera/lib/libnvcameranrr.so
+stock-t124	system/vendor/lib/libnvcudautils.so		t124/camera/lib/libnvcudautils.so
+
+# Firmware
+nv-tegra-t124	vendor/firmware/gk20a/fecs.bin			t124/firmware/gk20a/fecs.bin
+nv-tegra-t124	vendor/firmware/gk20a/gpccs.bin			t124/firmware/gk20a/gpccs.bin
+nv-tegra-t124	vendor/firmware/gk20a/gpmu_ucode.bin		t124/firmware/gk20a/gpmu_ucode.bin
+nv-tegra-t124	vendor/firmware/gk20a/NETB_img.bin		t124/firmware/gk20a/NETB_img.bin
+nv-tegra-t124	vendor/firmware/nvavp_aacdec_ucode.bin		t124/firmware/nvavp_aacdec_ucode.bin
+nv-tegra-t124	vendor/firmware/nvavp_aud_ucode.bin		t124/firmware/nvavp_aud_ucode.bin
+nv-tegra-t124	vendor/firmware/nvavp_mp3dec_ucode.bin		t124/firmware/nvavp_mp3dec_ucode.bin
+nv-tegra-t124	vendor/firmware/nvavp_os_0ff00000.bin		t124/firmware/nvavp_os_0ff00000.bin
+nv-tegra-t124	vendor/firmware/nvavp_os_8ff00000.bin		t124/firmware/nvavp_os_8ff00000.bin
+nv-tegra-t124	vendor/firmware/nvavp_os_eff00000.bin		t124/firmware/nvavp_os_eff00000.bin
+nv-tegra-t124	vendor/firmware/nvavp_os_f7e00000.bin		t124/firmware/nvavp_os_f7e00000.bin
+nv-tegra-t124	vendor/firmware/nvavp_vid_ucode_alt.bin		t124/firmware/nvavp_vid_ucode_alt.bin
+nv-tegra-t124	vendor/firmware/tegra12x/nvhost_msenc031.fw	t124/firmware/tegra12x/nvhost_msenc031.fw
+nv-tegra-t124	etc/firmware/tegra12x/nvhost_tsec.fw		t124/firmware/tegra12x/nvhost_tsec.fw
+nv-tegra-t124	vendor/firmware/tegra12x/vic03_ucode.bin	t124/firmware/tegra12x/vic03_ucode.bin
+nv-tegra-t124	etc/firmware/tegra12x_xusb_firmware		t124/firmware/tegra12x_xusb_firmware
+
+# Keystore
+nv-tegra-t124	vendor/lib/hw/keystore.tegra.so	t124/keystore/lib/hw/keystore.tegra.so
+
+# NVGPU
+nv-tegra-t210-rel24	vendor/lib64/hw/gralloc.tegra.so	t124/nvgpu/lib64/hw/gralloc.tegra.so
+nv-tegra-t210-rel24	vendor/lib64/hw/hwcomposer.tegra.so	t124/nvgpu/lib64/hw/hwcomposer.tegra.so
+stock-t210-rel24	vendor/lib64/egl/libEGL_tegra.so	t124/nvgpu/lib64/egl/libEGL_tegra.so
+stock-t210-rel24	vendor/lib64/egl/libGLESv1_CM_tegra.so	t124/nvgpu/lib64/egl/libGLESv1_CM_tegra.so
+stock-t210-rel24	vendor/lib64/egl/libGLESv2_tegra.so	t124/nvgpu/lib64/egl/libGLESv2_tegra.so
+nv-tegra-t210-rel24	vendor/lib/hw/gralloc.tegra.so		t124/nvgpu/lib/hw/gralloc.tegra.so
+nv-tegra-t210-rel24	vendor/lib/hw/hwcomposer.tegra.so	t124/nvgpu/lib/hw/hwcomposer.tegra.so
+stock-t210-rel24	vendor/lib/egl/libEGL_tegra.so		t124/nvgpu/lib/egl/libEGL_tegra.so
+stock-t210-rel24	vendor/lib/egl/libGLESv1_CM_tegra.so	t124/nvgpu/lib/egl/libGLESv1_CM_tegra.so
+stock-t210-rel24	vendor/lib/egl/libGLESv2_tegra.so	t124/nvgpu/lib/egl/libGLESv2_tegra.so
+stock-t210-rel24	vendor/lib64/libglcore.so		t124/nvgpu/lib64/libglcore.so
+nv-tegra-t210-rel24	vendor/lib64/libnvrmapi_tegra.so	t124/nvgpu/lib64/libnvrmapi_tegra.so
+nv-tegra-t210-rel24	vendor/lib64/libnvrm_gpu.so		t124/nvgpu/lib64/libnvrm_gpu.so
+nv-tegra-t210-rel24	vendor/lib64/libnvrm_graphics.so	t124/nvgpu/lib64/libnvrm_graphics.so
+nv-tegra-t210-rel24	vendor/lib64/libnvrm.so			t124/nvgpu/lib64/libnvrm.so
+nv-tegra-t210-rel24	vendor/lib64/libnvblit.so		t124/nvgpu/lib64/libnvblit.so
+nv-tegra-t210-rel24	vendor/lib64/libnvddk_2d_v2.so		t124/nvgpu/lib64/libnvddk_2d_v2.so
+nv-tegra-t210-rel24	vendor/lib64/libnvddk_vic.so		t124/nvgpu/lib64/libnvddk_vic.so
+nv-tegra-t210-rel24	vendor/lib64/libnvglsi.so		t124/nvgpu/lib64/libnvglsi.so
+nv-tegra-t210-rel24	vendor/lib64/libnvgr.so			t124/nvgpu/lib64/libnvgr.so
+nv-tegra-t210-rel24	vendor/lib64/libnvwsi.so		t124/nvgpu/lib64/libnvwsi.so
+nv-tegra-t210-rel24	vendor/lib64/libnvhwc_service.so	t124/nvgpu/lib64/libnvhwc_service.so
+nv-tegra-t210-rel24	vendor/lib64/libcuda.so			t124/nvgpu/lib64/libcuda.so
+stock-t210-rel24	vendor/lib/libglcore.so			t124/nvgpu/lib/libglcore.so
+nv-tegra-t210-rel24	vendor/lib/libnvrmapi_tegra.so		t124/nvgpu/lib/libnvrmapi_tegra.so
+nv-tegra-t210-rel24	vendor/lib/libnvrm_gpu.so		t124/nvgpu/lib/libnvrm_gpu.so
+nv-tegra-t210-rel24	vendor/lib/libnvrm_graphics.so		t124/nvgpu/lib/libnvrm_graphics.so
+nv-tegra-t210-rel24	vendor/lib/libnvrm.so			t124/nvgpu/lib/libnvrm.so
+nv-tegra-t210-rel24	vendor/lib/libnvblit.so			t124/nvgpu/lib/libnvblit.so
+nv-tegra-t210-rel24	vendor/lib/libnvddk_2d_v2.so		t124/nvgpu/lib/libnvddk_2d_v2.so
+nv-tegra-t210-rel24	vendor/lib/libnvddk_vic.so		t124/nvgpu/lib/libnvddk_vic.so
+nv-tegra-t210-rel24	vendor/lib/libnvglsi.so			t124/nvgpu/lib/libnvglsi.so
+nv-tegra-t210-rel24	vendor/lib/libnvgr.so			t124/nvgpu/lib/libnvgr.so
+nv-tegra-t210-rel24	vendor/lib/libnvwsi.so			t124/nvgpu/lib/libnvwsi.so
+nv-tegra-t210-rel24	vendor/lib/libnvhwc_service.so		t124/nvgpu/lib/libnvhwc_service.so
+nv-tegra-t210-rel24	vendor/lib/libcuda.so			t124/nvgpu/lib/libcuda.so
+
+# NVMM
+nv-tegra-t124	vendor/lib/libstagefrighthw.so		t124/nvmm/lib/libstagefrighthw.so
+nv-tegra-t124	vendor/lib/libnvomxadaptor.so		t124/nvmm/lib/libnvomxadaptor.so
+nv-tegra-t124	vendor/lib/libnvomxilclient.so		t124/nvmm/lib/libnvomxilclient.so
+nv-tegra-t124	vendor/lib/libnvomx.so			t124/nvmm/lib/libnvomx.so
+nv-tegra-t124	vendor/lib/libnvmm_audio.so		t124/nvmm/lib/libnvmm_audio.so
+nv-tegra-t124	vendor/lib/libnvmm_contentpipe.so	t124/nvmm/lib/libnvmm_contentpipe.so
+nv-tegra-t124	vendor/lib/libnvmmlite_audio.so		t124/nvmm/lib/libnvmmlite_audio.so
+nv-tegra-t124	vendor/lib/libnvmmlite_image.so		t124/nvmm/lib/libnvmmlite_image.so
+nv-tegra-t124	vendor/lib/libnvmmlite.so		t124/nvmm/lib/libnvmmlite.so
+nv-tegra-t124	vendor/lib/libnvmmlite_utils.so		t124/nvmm/lib/libnvmmlite_utils.so
+nv-tegra-t124	vendor/lib/libnvmmlite_video.so		t124/nvmm/lib/libnvmmlite_video.so
+nv-tegra-t124	vendor/lib/libnvmm_parser.so		t124/nvmm/lib/libnvmm_parser.so
+nv-tegra-t124	vendor/lib/libnvmm.so			t124/nvmm/lib/libnvmm.so
+stock-t124	system/vendor/lib/libnvmm_msaudio.so	t124/nvmm/lib/libnvmm_msaudio.so
+nv-tegra-t124	vendor/lib/libnvmm_utils.so		t124/nvmm/lib/libnvmm_utils.so
+nv-tegra-t124	vendor/lib/libnvmm_writer.so		t124/nvmm/lib/libnvmm_writer.so
+nv-tegra-t124	vendor/lib/libnvtvmr.so			t124/nvmm/lib/libnvtvmr.so
+nv-tegra-t124	vendor/lib/libnvtnr.so			t124/nvmm/lib/libnvtnr.so
+nv-tegra-t124	vendor/lib/libnvparser.so		t124/nvmm/lib/libnvparser.so
+nv-tegra-t124	vendor/lib/libnvavp.so			t124/nvmm/lib/libnvavp.so
+
+# NVPHS
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_boot.so		t124/nvphs/lib64/libnvgov_boot.so
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_camera.so		t124/nvphs/lib64/libnvgov_camera.so
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_force.so		t124/nvphs/lib64/libnvgov_force.so
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_generic.so	t124/nvphs/lib64/libnvgov_generic.so
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_gpucompute.so	t124/nvphs/lib64/libnvgov_gpucompute.so
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_graphics.so	t124/nvphs/lib64/libnvgov_graphics.so
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_il.so		t124/nvphs/lib64/libnvgov_il.so
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_spincircle.so	t124/nvphs/lib64/libnvgov_spincircle.so
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_tbc.so		t124/nvphs/lib64/libnvgov_tbc.so
+nv-tegra-t210-rel29	vendor/lib64/libnvgov_ui.so		t124/nvphs/lib64/libnvgov_ui.so
+nv-tegra-t210-rel29	vendor/lib64/libnvphs.so		t124/nvphs/lib64/libnvphs.so
+nv-tegra-t210-rel29	vendor/lib64/libnvphsd.so		t124/nvphs/lib64/libnvphsd.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_boot.so		t124/nvphs/lib/libnvgov_boot.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_camera.so		t124/nvphs/lib/libnvgov_camera.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_force.so		t124/nvphs/lib/libnvgov_force.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_generic.so		t124/nvphs/lib/libnvgov_generic.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_gpucompute.so	t124/nvphs/lib/libnvgov_gpucompute.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_graphics.so		t124/nvphs/lib/libnvgov_graphics.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_il.so		t124/nvphs/lib/libnvgov_il.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_spincircle.so	t124/nvphs/lib/libnvgov_spincircle.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_tbc.so		t124/nvphs/lib/libnvgov_tbc.so
+nv-tegra-t210-rel29	vendor/lib/libnvgov_ui.so		t124/nvphs/lib/libnvgov_ui.so
+nv-tegra-t210-rel29	vendor/lib/libnvphs.so			t124/nvphs/lib/libnvphs.so
+nv-tegra-t210-rel29	vendor/lib/libnvphsd.so			t124/nvphs/lib/libnvphsd.so
+
+# Security
+stock-t124	system/vendor/bin/ss_status		t124/security/bin32/ss_status
+stock-t124	system/vendor/bin/tlk_daemon		t124/security/bin32/tlk_daemon
+nv-tegra-t124	vendor/lib/libtlk_secure_hdcp_up.so	t124/security/lib/libtlk_secure_hdcp_up.so
+nv-tegra-t124	vendor/lib/libtsechdcp.so		t124/security/lib/libtsechdcp.so
+nv-tegra-t124	vendor/lib/libtsec_wrapper.so		t124/security/lib/libtsec_wrapper.so
+
+# Sensors
+nv-tegra-t124	lib/hw/sensors.default.api_v1.3.mpl520.nvs.so	t124/sensors/lib/hw/sensors.default.api_v1.3.mpl520.nvs.so
+nv-tegra-t124	lib/libmllite.so				t124/sensors/lib/libmllite.so
+nv-tegra-t124	lib/libmplmpu.so				t124/sensors/lib/libmplmpu.so
+nv-tegra-t124	lib/libsensors.fusion.mpl520.nvs.so		t124/sensors/lib/libsensors.fusion.mpl520.nvs.so
+nv-tegra-t124	lib/libsensors.hal-drivers.nvs.so		t124/sensors/lib/libsensors.hal-drivers.nvs.so
+nv-tegra-t124	lib/libsensors.hal.nvs.so			t124/sensors/lib/libsensors.hal.nvs.so
+nv-tegra-t124	lib/libsensors.prefusion.mpl520.nvs.so		t124/sensors/lib/libsensors.prefusion.mpl520.nvs.so
+
+# Widevine
+stock-t124	system/vendor/lib/liboemcrypto.so	t124/widevine/lib/liboemcrypto.so
