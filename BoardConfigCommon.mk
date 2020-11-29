@@ -34,6 +34,7 @@ TARGET_LD_SHIM_LIBS += /system/vendor/lib/hw/camera.tegra.so|/system/vendor/lib/
 endif
 
 # Graphics
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 ifeq ($(TARGET_TEGRA_GPU),drm)
 TARGET_USES_HWC2 := true
 BOARD_USES_DRM_HWCOMPOSER := true
