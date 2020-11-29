@@ -14,3 +14,8 @@
 
 # Shims
 allow init zygote:process noatsecure;
+
+allow init self:netlink_kobject_uevent_socket read;
+allow init sysfs_device_platform:file r_file_perms;
+allow init sysfs_nvi2c:file r_file_perms;
+allow init touch_device:chr_file ioctl;
