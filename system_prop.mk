@@ -16,6 +16,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     hwc.drm.device=/dev/dri/card1
 endif
 
+# Don't preload OpenGL in Zygote, the Tegra drivers do not like it
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.zygote.disable_gl_preload=true
+
 # Input
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.noresample=1
