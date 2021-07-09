@@ -60,6 +60,10 @@ BOARD_GPU_DRIVERS := nouveau
 DEVICE_MANIFEST_FILE += device/nvidia/t124-common/t124-drm-manifest.xml
 endif
 
+# Nvmm shims
+TARGET_LD_SHIM_LIBS += \
+  /system/vendor/lib/libnvomxadaptor.so|/system/lib/libmedia_omx.so
+
 # Zygote whitelist extra paths
 ZYGOTE_WHITELIST_PATH_EXTRA := \"/dev/nvhost-ctrl\",\"/dev/nvmap\",
 
