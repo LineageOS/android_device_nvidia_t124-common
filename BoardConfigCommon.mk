@@ -33,6 +33,10 @@ ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
 TARGET_LD_SHIM_LIBS += /system/vendor/lib/hw/camera.tegra.so|/system/vendor/lib/libcamera_shim.so
 endif
 
+# nvgpu shims
+TARGET_LD_SHIM_LIBS += \
+  /system/vendor/lib/libglcore.so|/system/lib/libutilscallstack.so \
+
 # liblog shims
 TARGET_LD_SHIM_LIBS += \
   /system/vendor/lib/libnvcamlog.so|/system/lib/liblog.so \
