@@ -43,11 +43,13 @@ nv-tegra-t124	vendor/lib/hw/keystore.tegra.so	t124/keystore/lib/hw/keystore.tegr
 # NVGPU
 nv-tegra-t210-rel24	vendor/lib64/hw/gralloc.tegra.so	t124/nvgpu/lib64/hw/gralloc.tegra.so
 nv-tegra-t210-rel24	vendor/lib64/hw/hwcomposer.tegra.so	t124/nvgpu/lib64/hw/hwcomposer.tegra.so
+nv-tegra-t210-rel24	vendor/lib64/hw/vulkan.tegra.so		t124/nvgpu/lib64/hw/vulkan.tegra.so
 nv-tegra-t210-rel24	vendor/lib64/egl/libEGL_tegra.so	t124/nvgpu/lib64/egl/libEGL_tegra.so
 nv-tegra-t210-rel24	vendor/lib64/egl/libGLESv1_CM_tegra.so	t124/nvgpu/lib64/egl/libGLESv1_CM_tegra.so
 nv-tegra-t210-rel24	vendor/lib64/egl/libGLESv2_tegra.so	t124/nvgpu/lib64/egl/libGLESv2_tegra.so
 nv-tegra-t210-rel24	vendor/lib/hw/gralloc.tegra.so		t124/nvgpu/lib/hw/gralloc.tegra.so
 nv-tegra-t210-rel24	vendor/lib/hw/hwcomposer.tegra.so	t124/nvgpu/lib/hw/hwcomposer.tegra.so
+nv-tegra-t210-rel24	vendor/lib/hw/vulkan.tegra.so		t124/nvgpu/lib/hw/vulkan.tegra.so
 nv-tegra-t210-rel24	vendor/lib/egl/libEGL_tegra.so		t124/nvgpu/lib/egl/libEGL_tegra.so
 nv-tegra-t210-rel24	vendor/lib/egl/libGLESv1_CM_tegra.so	t124/nvgpu/lib/egl/libGLESv1_CM_tegra.so
 nv-tegra-t210-rel24	vendor/lib/egl/libGLESv2_tegra.so	t124/nvgpu/lib/egl/libGLESv2_tegra.so

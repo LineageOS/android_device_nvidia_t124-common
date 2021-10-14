@@ -43,6 +43,19 @@ LOCAL_MODULE_RELATIVE_PATH := hw
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE               := vulkan.tegra
+LOCAL_SRC_FILES_32         := $(T124_NVGPU_PATH)/lib/hw/vulkan.tegra.so
+LOCAL_SRC_FILES_64         := $(T124_NVGPU_PATH)/lib64/hw/vulkan.tegra.so
+LOCAL_MULTILIB             := both
+LOCAL_MODULE_SUFFIX        := .so
+LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_OWNER         := nvidia
+LOCAL_VENDOR_MODULE        := true
+LOCAL_MODULE_RELATIVE_PATH := hw
+include $(BUILD_NVIDIA_ARCH_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE               := libEGL_tegra
 LOCAL_SRC_FILES_32         := $(T124_NVGPU_PATH)/lib/egl/libEGL_tegra.so
 LOCAL_SRC_FILES_64         := $(T124_NVGPU_PATH)/lib64/egl/libEGL_tegra.so
