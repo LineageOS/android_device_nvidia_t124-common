@@ -17,6 +17,7 @@ LOCAL_C_INCLUDES := \
 LOCAL_SHARED_LIBRARIES := liblog
 LOCAL_MODULE := libs
 LOCAL_MODULE_TAGS := optional
+LOCAL_LDFLAGS_arm += -Wl,--version-script,$(LOCAL_PATH)/stdio_vsnprintf.arm.map
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
