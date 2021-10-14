@@ -33,6 +33,20 @@ ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
 TARGET_LD_SHIM_LIBS += /system/vendor/lib/hw/camera.tegra.so|/system/vendor/lib/libcamera_shim.so
 endif
 
+# liblog shims
+TARGET_LD_SHIM_LIBS += \
+  /system/vendor/lib/libnvcamlog.so|/system/lib/liblog.so \
+  /system/vendor/lib/libnvmm_camera_v3.so|/system/lib/liblog.so \
+  /system/vendor/lib/libnvcamerahdr_v3.so|/system/lib/liblog.so \
+  /system/vendor/lib/hw/camera.tegra.so|/system/lib/liblog.so \
+  /system/vendor/lib/egl/libEGL_tegra.so|/system/lib/liblog.so \
+  /system/vendor/lib/libglcore.so|/system/lib/liblog.so \
+  /system/vendor/lib/libnvgr.so|/system/lib/liblog.so \
+  /system/vendor/lib/libnvmm_utils.so|/system/lib/liblog.so \
+  /system/vendor/lib/libnvomxadaptor.so|/system/lib/liblog.so \
+  /system/vendor/lib/libnvomx.so|/system/lib/liblog.so \
+  /system/vendor/lib/libmplmpu.so|/system/lib/liblog.so
+
 # Graphics
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 ifeq ($(TARGET_TEGRA_GPU),drm)

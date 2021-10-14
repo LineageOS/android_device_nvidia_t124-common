@@ -53,6 +53,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_MODULE_RELATIVE_PATH := egl
+LOCAL_SHARED_LIBRARIES     := liblog
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -92,6 +93,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_REQUIRED_MODULES     := com.nvidia.nvsi.xml
+LOCAL_SHARED_LIBRARIES     := liblog
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
@@ -153,6 +155,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
+LOCAL_SHARED_LIBRARIES     := liblog
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
