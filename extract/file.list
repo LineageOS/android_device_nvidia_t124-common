@@ -38,7 +38,8 @@ nv-tegra-t124	vendor/firmware/tegra12x/vic03_ucode.bin	t124/firmware/tegra12x/vi
 nv-tegra-t124	etc/firmware/tegra12x_xusb_firmware		t124/firmware/tegra12x_xusb_firmware
 
 # Keystore
-nv-tegra-t124	vendor/lib/hw/keystore.tegra.so	t124/keystore/lib/hw/keystore.tegra.so
+nv-tegra-t210-rel24	vendor/lib64/hw/keystore.v0.tegra.so	t124/keystore/lib64/hw/keystore.v0.tegra.so
+nv-tegra-t124		vendor/lib/hw/keystore.tegra.so		t124/keystore/lib/hw/keystore.tegra.so
 
 # NVGPU
 nv-tegra-t210-rel24	vendor/lib64/hw/gralloc.tegra.so	t124/nvgpu/lib64/hw/gralloc.tegra.so
@@ -129,11 +130,16 @@ nv-tegra-t210-rel29	vendor/lib/libnvphs.so			t124/nvphs/lib/libnvphs.so
 nv-tegra-t210-rel29	vendor/lib/libnvphsd.so			t124/nvphs/lib/libnvphsd.so
 
 # Security
-stock-t124	system/vendor/bin/ss_status		t124/security/bin32/ss_status
-stock-t124	system/vendor/bin/tlk_daemon		t124/security/bin32/tlk_daemon
-nv-tegra-t124	vendor/lib/libtlk_secure_hdcp_up.so	t124/security/lib/libtlk_secure_hdcp_up.so
-nv-tegra-t124	vendor/lib/libtsechdcp.so		t124/security/lib/libtsechdcp.so
-nv-tegra-t124	vendor/lib/libtsec_wrapper.so		t124/security/lib/libtsec_wrapper.so
+nv-tegra-t210-rel24	vendor/bin/ss_status			t124/security/bin64/ss_status
+nv-tegra-t210-rel24	vendor/bin/tlk_daemon			t124/security/bin64/tlk_daemon
+stock-t124		system/vendor/bin/ss_status		t124/security/bin32/ss_status
+stock-t124		system/vendor/bin/tlk_daemon		t124/security/bin32/tlk_daemon
+nv-tegra-t124		vendor/lib/libtlk_secure_hdcp_up.so	t124/security/lib/libtlk_secure_hdcp_up.so
+nv-tegra-t124		vendor/lib/libtsechdcp.so		t124/security/lib/libtsechdcp.so
+nv-tegra-t124		vendor/lib/libtsec_wrapper.so		t124/security/lib/libtsec_wrapper.so
+nv-tegra-t210-rel24	vendor/lib64/libtlk_secure_hdcp_up.so	t124/security/lib64/libtlk_secure_hdcp_up.so
+nv-tegra-t210-rel24	vendor/lib64/libtsechdcp.so		t124/security/lib64/libtsechdcp.so
+nv-tegra-t124-rel24	vendor/lib64/libtsec_wrapper.so		t124/security/lib64/libtsec_wrapper.so
 
 # Sensors
 nv-tegra-t124	lib/hw/sensors.default.api_v1.3.mpl520.nvs.so	t124/sensors/lib/hw/sensors.default.api_v1.3.mpl520.nvs.so

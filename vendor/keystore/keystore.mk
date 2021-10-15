@@ -13,6 +13,13 @@
 # limitations under the License.
 
 PRODUCT_PACKAGES += \
-                    android.hardware.keymaster@3.0-impl \
-                    android.hardware.keymaster@3.0-service \
-                    keystore.tegra
+    android.hardware.keymaster@3.0-service \
+    android.hardware.keymaster@3.0-impl
+
+ifeq ($(TARGET_ARCH),arm64)
+PRODUCT_PACKAGES += \
+    keystore.v0.tegra
+else
+PRODUCT_PACKAGES += \
+    keystore.tegra
+endif
