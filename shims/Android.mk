@@ -9,6 +9,13 @@ LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE           := libphs
+LOCAL_SRC_FILES        := dummy.cpp
+LOCAL_SHARED_LIBRARIES := libnvphs
+LOCAL_VENDOR_MODULE    := true
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
 LOCAL_SRC_FILES := stdio_vsnprintf.cpp
 LOCAL_C_INCLUDES := \
     bionic/libc \
