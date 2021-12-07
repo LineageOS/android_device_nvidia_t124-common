@@ -60,9 +60,6 @@ BOARD_GPU_DRIVERS := nouveau
 DEVICE_MANIFEST_FILE += device/nvidia/t124-common/t124-drm-manifest.xml
 endif
 
-# SELinux
-BOARD_SEPOLICY_DIRS += device/nvidia/t124-common/sepolicy
-
 # Zygote whitelist extra paths
 ZYGOTE_WHITELIST_PATH_EXTRA := \"/dev/nvhost-ctrl\",\"/dev/nvmap\",
 
