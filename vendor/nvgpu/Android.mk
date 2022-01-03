@@ -66,7 +66,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_MODULE_RELATIVE_PATH := egl
-LOCAL_SHARED_LIBRARIES     := liblog libnvphs
+LOCAL_SHARED_LIBRARIES     := liblog libnvphs libnvos_shim
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)

@@ -36,6 +36,7 @@ endif
 # nvgpu shims
 TARGET_LD_SHIM_LIBS += \
   /system/vendor/lib/libglcore.so|/system/lib/libutilscallstack.so \
+  /system/vendor/lib/egl/libEGL_tegra.so|/system/vendor/lib/libnvos_shim.so
 
 # liblog shims
 TARGET_LD_SHIM_LIBS += \
@@ -63,7 +64,8 @@ endif
 # Nvmm shims
 TARGET_LD_SHIM_LIBS += \
   /system/vendor/lib/libnvomxadaptor.so|/system/lib/libmedia_omx.so \
-  /system/vendor/lib/libnvomxadaptor.so|/system/vendor/lib/libnvmm_shim.so
+  /system/vendor/lib/libnvomxadaptor.so|/system/vendor/lib/libnvmm_shim.so \
+  /system/vendor/lib/libnvmlite_video.so|/system/vendor/lib/libnvos_shim.so
 
 # Zygote whitelist extra paths
 ZYGOTE_WHITELIST_PATH_EXTRA := \"/dev/nvhost-ctrl\",\"/dev/nvmap\",

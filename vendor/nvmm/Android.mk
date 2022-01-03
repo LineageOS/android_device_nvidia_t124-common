@@ -157,6 +157,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
+LOCAL_SHARED_LIBRARIES     := libnvos_shim
 include $(BUILD_NVIDIA_ARCH_PREBUILT)
 
 include $(CLEAR_VARS)
