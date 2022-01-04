@@ -19,7 +19,7 @@ TARGET_TEGRA_GPU      ?= nvgpu-t124
 TARGET_TEGRA_KEYSTORE ?= nvkeystore-t124
 
 # System properties
-include $(LOCAL_PATH)/system_prop.mk
+include device/nvidia/t124-common/system_prop.mk
 
 PRODUCT_PACKAGES += \
     init.t124.rc \
