@@ -103,32 +103,6 @@ nv-tegra-t124	vendor/lib/libnvtnr.so			t124/nvmm/lib/libnvtnr.so
 nv-tegra-t124	vendor/lib/libnvparser.so		t124/nvmm/lib/libnvparser.so
 nv-tegra-t124	vendor/lib/libnvavp.so			t124/nvmm/lib/libnvavp.so
 
-# NVPHS
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_boot.so		t124/nvphs/lib64/libnvgov_boot.so
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_camera.so		t124/nvphs/lib64/libnvgov_camera.so
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_force.so		t124/nvphs/lib64/libnvgov_force.so
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_generic.so	t124/nvphs/lib64/libnvgov_generic.so
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_gpucompute.so	t124/nvphs/lib64/libnvgov_gpucompute.so
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_graphics.so	t124/nvphs/lib64/libnvgov_graphics.so
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_il.so		t124/nvphs/lib64/libnvgov_il.so
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_spincircle.so	t124/nvphs/lib64/libnvgov_spincircle.so
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_tbc.so		t124/nvphs/lib64/libnvgov_tbc.so
-nv-tegra-t210-rel29	vendor/lib64/libnvgov_ui.so		t124/nvphs/lib64/libnvgov_ui.so
-nv-tegra-t210-rel29	vendor/lib64/libnvphs.so		t124/nvphs/lib64/libnvphs.so
-nv-tegra-t210-rel29	vendor/lib64/libnvphsd.so		t124/nvphs/lib64/libnvphsd.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_boot.so		t124/nvphs/lib/libnvgov_boot.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_camera.so		t124/nvphs/lib/libnvgov_camera.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_force.so		t124/nvphs/lib/libnvgov_force.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_generic.so		t124/nvphs/lib/libnvgov_generic.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_gpucompute.so	t124/nvphs/lib/libnvgov_gpucompute.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_graphics.so		t124/nvphs/lib/libnvgov_graphics.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_il.so		t124/nvphs/lib/libnvgov_il.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_spincircle.so	t124/nvphs/lib/libnvgov_spincircle.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_tbc.so		t124/nvphs/lib/libnvgov_tbc.so
-nv-tegra-t210-rel29	vendor/lib/libnvgov_ui.so		t124/nvphs/lib/libnvgov_ui.so
-nv-tegra-t210-rel29	vendor/lib/libnvphs.so			t124/nvphs/lib/libnvphs.so
-nv-tegra-t210-rel29	vendor/lib/libnvphsd.so			t124/nvphs/lib/libnvphsd.so
-
 # Security
 nv-tegra-t210-rel24	vendor/bin/ss_status			t124/security/bin64/ss_status
 nv-tegra-t210-rel24	vendor/bin/tlk_daemon			t124/security/bin64/tlk_daemon

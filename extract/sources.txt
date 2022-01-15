@@ -1,3 +1,2 @@
 nv-tegra-t124		https://nv-tegra.nvidia.com/gitweb/?p=tegra/prebuilts-licensed-binary-tlk-shieldtablet.git;a=blob_plain;f=extract-nv-bins.sh;hb=a01dbe93e17963f087c8371f6a158dbbfbc65c09	git	prebuilt/shieldtablet/target/product/shieldtablet
-nv-tegra-t210-rel29	https://nv-tegra.nvidia.com/gitweb/?p=tegra/prebuilts-licensed-binary-tlk-t210.git;a=blob_plain;f=extract-nv-bins.sh;hb=ece734398b768c087d4a5edf36313ea884b3bcc3		git	prebuilt/t210/target/product/t210
 stock-t124		http://developer.download.nvidia.com/mobile/shield/ROM/ST8/5_2_0/nv-recovery-st-wx-un-do-5.2.0.zip										nv-recovery-no-vendor
