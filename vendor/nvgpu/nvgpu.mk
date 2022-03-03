@@ -33,4 +33,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610 \
     persist.tegra.compositor=glcomposer \
-    persist.tegra.decompression=cde-client
+    persist.tegra.decompression=cde-client \
+    debug.sf.disable_backpressure=0 \
+    debug.sf.enable_gl_backpressure=1
