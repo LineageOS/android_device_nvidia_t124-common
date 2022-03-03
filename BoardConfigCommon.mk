@@ -35,6 +35,8 @@ endif
 
 # nvgpu shims
 TARGET_LD_SHIM_LIBS += \
+  /system/bin/app_process32|/system/lib/libshim_zw.so \
+  /system/bin/app_process64|/system/lib64/libshim_zw.so \
   /system/vendor/lib/libglcore.so|/system/lib/libutilscallstack.so \
   /system/vendor/lib/egl/libEGL_tegra.so|/system/vendor/lib/libnvos_shim.so
 

@@ -36,7 +36,6 @@ endif
 ifeq ($(TARGET_TEGRA_GPU),nvgpu-t124)
 # Graphics Shims
 PRODUCT_PACKAGES += \
-    init.nvgpu_shims.rc \
     libshim_zw
 else ifeq ($(TARGET_TEGRA_GPU),drm)
 PRODUCT_PACKAGES += \
