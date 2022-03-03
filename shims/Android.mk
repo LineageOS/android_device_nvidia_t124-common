@@ -17,9 +17,9 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE           := libnvmm_shim
-LOCAL_SRC_FILES        := nvmm_connect.cpp
+LOCAL_SRC_FILES        := nvmm_shims.cpp
 LOCAL_MULTILIB         := 32
-LOCAL_SHARED_LIBRARIES := libstagefright
+LOCAL_SHARED_LIBRARIES := libstagefright libui
 LOCAL_VENDOR_MODULE    := true
 include $(BUILD_SHARED_LIBRARY)
 
