@@ -83,6 +83,6 @@ on property:sys.boot_completed=1
     setprop sys.io.scheduler bfq
 
 # Thie yields each tegra wdt expiration to be at 30 secs and fourth expiration for reboot at 120 secs.
-service watchdogd /sbin/watchdogd 10 110
+service watchdogd /system/bin/watchdogd 10 110
     class core
     seclabel u:r:watchdogd:s0
