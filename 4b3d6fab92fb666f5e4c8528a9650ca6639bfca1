@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6037cb35_7c9788f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-06-26T04:47:00Z",
+      "side": 1,
+      "message": "this is an override for a common init scripts value. don\u0027t like it, but okay ",
+      "revId": "4b3d6fab92fb666f5e4c8528a9650ca6639bfca1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "204b83da_39a03b6a",
