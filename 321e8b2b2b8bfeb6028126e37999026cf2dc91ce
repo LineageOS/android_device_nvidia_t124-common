@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f694ed96_3a03aa8d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-06-26T01:29:44Z",
+      "side": 1,
+      "message": "Would really prefer to have hwc working. But if not, commit message needs reworded before merging.",
+      "revId": "321e8b2b2b8bfeb6028126e37999026cf2dc91ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
